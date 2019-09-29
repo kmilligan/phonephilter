@@ -15,11 +15,11 @@ Requirements
 
 There's a bunch of jargon to learn if interested:
 * [VoIP](https://en.wikipedia.org/wiki/Voice_over_IP)
-* [SIP] (https://en.wikipedia.org/wiki/Session_Initiation_Protocol)
-* [ATA] (https://en.wikipedia.org/wiki/Analog_telephone_adapter)
-* [PBX] (https://en.wikipedia.org/wiki/Business_telephone_system#Private_branch_exchange)
-* [ITSP] (https://en.wikipedia.org/wiki/Internet_telephony_service_provider)
-* [PSTN] (https://en.wikipedia.org/wiki/Public_switched_telephone_network)
+* [SIP](https://en.wikipedia.org/wiki/Session_Initiation_Protocol)
+* [ATA](https://en.wikipedia.org/wiki/Analog_telephone_adapter)
+* [PBX](https://en.wikipedia.org/wiki/Business_telephone_system#Private_branch_exchange)
+* [ITSP](https://en.wikipedia.org/wiki/Internet_telephony_service_provider)
+* [PSTN](https://en.wikipedia.org/wiki/Public_switched_telephone_network)
 
 That said, it is sufficient to know that: 
 * VoIP represents the idea of sending voice communication over the Internet
