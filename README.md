@@ -69,13 +69,13 @@ Next, you will need to install this on the memory card. Links to guides on how t
 Once the OS is on the microSD card, we need to add a couple of things.
 On the boot partition of the card:
 1. If you want to connect to your local network via WiFi, create a file called `wpa_supplicant.conf`. This file will tell the Pi how to connect to your local WiFi network on boot. The contents of this file should look like:
-
-	ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-	network={
-		ssid="YourWifiNetworkName"
-		psk="YourWifiNetworkPassword"
-	}
-
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+	ssid="YourWifiNetworkName"
+	psk="YourWifiNetworkPassword"
+}
+```
 2. Create an emtpy file called `ssh` . This will instruct the Pi to enable the SSH server on boot, so we can login to the Pi from our computer.
 
 Now you can put microSD card in the Pi and power it up. After a minute or so, you should be able to connect to it by doing `ssh pi@raspberrypi.local` , assuming you are on the same local network. 
@@ -87,7 +87,7 @@ Setup ITSP account
 
 This specifics of this part is going to vary wildly depending on the ITSP you choose, but generally speaking, you need to:
 1. Configure credentials (a user name and password) for accessing the the account via SIP. This is very likely NOT the same as credentials you use to log into the web site.
-2. Buy a phone number
+2. Obtain a phone number.
 3. You may need to configure outbound calling by designating which countries can be called.
 
 If you are using telnyx.com , this takes the form of:
@@ -95,8 +95,8 @@ If you are using telnyx.com , this takes the form of:
 2. Purchase a phone number and attach it to that "connection".
 3. Configure an "outbound profile" to allow for outbound calls, and attach it to the same "connection".
 
-Setup ATA
----------
+Connect the ATA
+---------------
 
 The ATA needs to be attached to your local network (wired; not WiFi) and to your analog telephone. Once it is powered, you should be able to hear a dial tone on your analog phone. Dial `***` and enter `02` at the prompt. This instructs the unit to speak the current IP address of the device. If you enter this IP address in your web browser, it should bring up the ATA management interface. 
 
